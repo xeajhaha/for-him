@@ -14,8 +14,6 @@ function moveNo(button) {
     button.style.left = `${x}px`;
     button.style.top = `${y}px`;
 }
-
-// Check if the device is touch-based (for mobile)
 if ("ontouchstart" in document.documentElement) {
     document.querySelector(".no").addEventListener("touchstart", function() {
         moveNo(this);
